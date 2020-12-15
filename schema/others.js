@@ -1,0 +1,50 @@
+//引入mongoose数据库操作模块
+var mongoose = require("mongoose");
+
+//轮播图的表结构
+module.exports = new mongoose.Schema({
+    //广告位
+    noticeImg:{
+        type:String,
+        default:""
+    },
+    noticeUrl:{
+        type:String,
+        default:""
+    },
+    //二维码
+    ma1Img:{
+        type:String,
+        default:""
+    },
+    ma1Title:{
+        type:String,
+        default:""
+    },
+    ma2Url:{
+        type:String,
+        default:""
+    },
+    ma2Title:{
+        type:String,
+        default:""
+    },
+    //关于我们信息
+    qq:{
+        type:String,
+        default:""
+    },
+    git:{
+        type:String,
+        default:""
+    },
+    support:{
+        type:String,
+        default:""
+    },
+    //底部信息栏
+    footer_msg:{
+        type:String,
+        default:""
+    }
+});
